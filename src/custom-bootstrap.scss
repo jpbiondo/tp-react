@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta+Mahee:wght@200;300;400;500;600;700;800&display=swap');
+
+
+// Custom theme colors and styles
+$primary: #fab00f;       // Change primary color
+$secondary: #ff6f61;     // Change secondary color
+$success: #28a745;       // Success color
+$body-bg-dark: #000;
+$font-family-base: 'Mukta Mahee', serif;
+
+// Navbar customization
+$dark: #141619;
+
+@import "bootstrap/scss/bootstrap";
