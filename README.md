@@ -1,50 +1,31 @@
-# React + TypeScript + Vite
+# TP React JS
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este repositorio consiste de un proyecto con [React](https://es.react.dev/) y [Typescript](https://www.typescriptlang.org/) de un formulario para agregar productos a una lista de productos y renderizarlos. Se vieron los conceptos de hooks como `useState` y custom hooks.
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-## Expanding the ESLint configuration
+Para estilos y responsive se instalan las librerías de [bootstrap](https://getbootstrap.com/) y [bootstrap react](https://react-bootstrap.netlify.app/). Variables de estilos fueron sobreescritas para darle un estilo más personalizado.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
 
-- Configure the top-level `parserOptions` property like this:
+Puedes probar el sitio [aquí](https://tp-react-sandy.vercel.app/).
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+## Estructura del proyecto
+- `./src/components/`: carpeta con todos los componentes del proyecto
+- `./src/hooks/`: carpeta con los hooks personalizados
+- `./src/assets/`: carpeta con las imágenes renderizadas (logo)
+## Ejecución del proyecto
+
+1. Clonar el repositorio:
+```sh
+git clone https://github.com/jpbiondo/tp-react.git
+cd tp-react
 ```
-
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
-
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
+2. Instalar dependencias de Node.js:
+```sh
+npm install
 ```
+3. Correr el proyecto en modo de desarrollo:
+```sh
+npm run dev
+```
+4. Abrir el enlace mostrado en consola en el navegador
